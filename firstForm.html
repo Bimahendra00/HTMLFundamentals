@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>First Form</title>
+</head>
+<body>
+    <form action="secondForm.html" method="post">
+        <h2>Sign Up Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Input Your Name Here" minlength="6" maxlength="32">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Input Your Email Here"minlength="6" maxlength="50">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="32">
+        <br>
+        <label for="gender">Choose your gender</label>
+        <input type="radio" id="gender" name="gender" value="male" required><label for="">Male</label>
+        <input type="radio" id="gender" name="gender" value="female" required><label for="">Female</label>
+        <br>
+        <label for="nation">Choose your nation</label>
+        <select name="nation" id="nation">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Thailand">Thailand</option>
+        </select>
+        <br>
+        <label for="agree">I agree to the <a href="#">Terms and Conditions</a></label>
+        <input type="checkbox" id="agree" name="agree" required>
+        <br>
+        <label for="notes">Tell us why you want to Sign Up</label>
+        <br>
+        <textarea name="notes" id="notes"></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
